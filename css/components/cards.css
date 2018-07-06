@@ -1,1 +1,29 @@
 /* TODO: code a simple grid of city cards */
+.card {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 200px;
+	margin: 15px;
+	background-size: cover;
+	flex: 1 1 200px;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+
+.card h3 {
+	font-size: 30px;
+	color: white;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.card:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6)
+}
